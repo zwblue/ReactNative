@@ -32,8 +32,8 @@ export default class App extends Component<Props> {
         </Text>
         <Text style={styles.instructions}>
           {instructions}
-          <Text>
-            1111
+          <Text style={styles.inline}>
+            这是行内式的样式
           </Text>  
         </Text>
         <Text>
@@ -55,6 +55,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+  },
+  inline:{
+    color:'#f33',
+    fontSize:20,
+    fontWeight:'bold'
   },
   instructions: {
     textAlign: 'center',
